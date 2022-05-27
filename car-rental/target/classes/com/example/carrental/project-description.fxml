@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="60.0" layoutY="55.0" prefHeight="291.0" prefWidth="521.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="61.0" prefWidth="303.0" text="OPIS PROJEKTU" />
+                  <Label alignment="TOP_LEFT" prefHeight="209.0" prefWidth="570.0" text="Projekt aplikacji w języku JAVA z użyciem frameworku JAVAFX. Projekt łączy ze sobą interfejs graficzny oraz bazę SQL, w której zawarte są informacje i dane z wypożyczalni samochodwej. Struktura bazy jest podzielona na tabele, w których znajdują się informacje o dostępnych autach, klientach, pracownikach, informacjach o wypożyczeniach oraz naprawach aut, oraz o rachunkach. Aplikacja umożliwia symulację wypożyczenia i zwrotu auta - podczas wypożyczenia mamy listę z dostępnymi autami - mówi o tym status (0 - gdy jest dostępne, 1 - gdy jest wypożyczone, 2 - gdy jest w naprawie), lista klientów, którzy mogą wypożyczyć auto. Data wypożyczenia oraz oddania auta jest pobierana z systemu jako bieżący dzień podczas wykonywanej operacji. Aplikacja umożliwia dodanie klientów, symulacje oddania i odbioru auta z serwisu, umożliwia podgląd statystyk, które zawarte są w punkcie 7 wymagań projektu jak i podgląd raportu z punktu 8 wymagań projektu." textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="backBtn" mnemonicParsing="false" prefHeight="33.0" prefWidth="152.0" text="Wróć">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
